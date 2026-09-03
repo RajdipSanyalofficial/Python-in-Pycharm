@@ -20,11 +20,21 @@ for i in range(1,16):
 # The return statement is used to send a value or expression from the called function back to the calling function.
 # It also terminates the execution of the function immediately.
 
+# ----------------------------------------------------------------------------------------------------------------
+
+# 1) Required Parameter
+# It is a parameter that can be passed through the function in correct positional order.
+# A function must be called with its correct number of arguments.
+# If we declare two parameters at the time of function definition then we need to give exact 2 arguments
+# when we call the function
+
+def names(name):
+    print(f"Hi {name}")
+
+names("Rajdip")
 
 
-
-
-# 1) Default Parameter
+# 2) Default Parameter
 # Dp is used to initialize function parameters with default values.
 # If no argument is provided during the function call, Python uses the default value automatically.
 
@@ -44,8 +54,42 @@ def power(c=3,d=3):
 
 power() #Default Parameter
 
+# ----------------------------------------------------------------------------------------------------------------
+
+# 3) Keyword argument
+# It is a parameter that is declared inside the function by its name directly.
+# It can be passed through the function in any order
+
+def division(a,b):
+    return a/b
+
+z=division(b=10,a=20) # req parameter
+z1=division(10,20) #keyword parameter
+print(z)
+print(z1)
+
+# -------------------------------------------------------------------------------------------------------------
+
+# Arbitrary positional argument
+
+def names(*args):
+    for i in args:
+        print(f"Name is: {i}😁😁")
+
+names("Rajdip Sanyal")
 
 
+
+
+
+
+
+
+def names(**kwargs):
+    for key,value in kwargs.items():
+        print(f"Key is: {key} and Value is: {value}")
+
+names(Name="Rajdip",Age=27,College="Academy of Technology 😎😎😎😎😎")
 
 # map()
 # It is used to apply a specified function to every element of an iterable (such as a list, tuple, or set)

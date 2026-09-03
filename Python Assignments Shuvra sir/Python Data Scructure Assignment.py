@@ -6,22 +6,8 @@
 a=[]
 print(type(a))
 
-languages=["R","Python","SAAS","Java","Scala",42]
-b=len(languages)
-print(b) #6
+languages=["R","Python","SAAS","Scala",42]
+print(f"The number of elements in languages: {len(languages)}")
 
-for lan in languages:
-    print(lan)
-
-temp=languages[1]
-
-print(temp)
-print(type(temp))
-
-c=languages.append("C Programming")
-print(languages)
-c1=languages.remove(42)
-print(languages)
-
-
-
+for i in languages:
+    print(f"Elements are: {i}")

@@ -129,7 +129,14 @@
 #
 # print(x)
 # print(y)
-#
-#
-#
+
+nums=[10,20,30,40]
+n1= [e**2 for e in nums]
+print(n1)
+
+n2=[z**4 for z in range(1,6)]
+print(n2)
+
+n3=[f for f in nums if f%2==0]
+print(n3)
 
