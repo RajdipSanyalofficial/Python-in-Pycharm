@@ -1,6 +1,6 @@
-# # # List is collection of elements which is ordered, mutable and allows duplicate elements. It is used
-# # # to store multiple elements in single variable
-# #
+# List is collection of elements which is ordered, mutable and allows duplicate elements. It is used
+# to store multiple elements in single variable
+
 # # a=[10,20,30,40]
 # # print(a)
 # # print(type(a))
